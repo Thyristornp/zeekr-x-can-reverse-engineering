@@ -45,8 +45,25 @@ python -m venv .venv
 
 CSV files are the public source of truth; the workbook is generated. [Methodology](docs/methodology.md) describes the workflow and bit conventions. Raw recordings and private diagnostic exports are not bundled; see the evidence policy before treating any finding as independently reproducible.
 
-## Help wanted
+## Looking for collaborators
 
-We welcome independent measurements, corrections, diagnostic mappings and comparisons across software versions. Start with the [open research questions](docs/research_questions.md). Submit an issue or pull request with the vehicle configuration, experiment description, bit convention and evidence.
+We are researching the CAN bus and ECU diagnostics of the **2023 Zeekr X AWD** and looking for others working on similar projects.
+
+Our current focus includes the VCU, BECM, front and rear drive units, DC/DC converter, and stalk switch. We have attributed **124 observed CAN IDs to these components** and published an English CAN matrix with signal candidates, evidence references, and remaining unknowns.
+
+We would welcome help with:
+
+- Validating signal locations, scaling, and physical meaning.
+- Mapping diagnostic requests and responses.
+- Identifying counters, checksums, and E2E protection.
+- Comparing findings across vehicles and software versions.
+
+If you have relevant experience, recordings, or independently decoded signals, we would be glad to exchange findings. **Candidates are clearly separated from confirmed results.**
+
+Start with the [open research questions](docs/research_questions.md). Submit an issue or pull request following the [contribution guidelines](CONTRIBUTING.md), or contact the maintainer directly.
+
+**Contact: [thyristor@yandex.ru](mailto:thyristor@yandex.ru)**
+
+Contributions, corrections, and technical discussions are welcome!
 
 This project is not affiliated with Zeekr or Geely. No OEM specification or completeness guarantee is implied. Research tools in this repository are offline only.
