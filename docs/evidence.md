@@ -4,10 +4,10 @@ Source attribution and payload decoding are independent. A CONFIRMED source mean
 
 ## Source attribution
 
-- EXP-0041: VCU isolated on CAN2; 46 IDs.
-- EXP-0042: BECM isolated on CAN2; 34 IDs.
-- EXP-0043: rear drive isolated on CAN2; 16 IDs. The original recording was misleadingly named as a front-drive recording; the owner corrected it. The rear-drive attribution is used here.
-- EXP-0044: front drive on CAN1; 14 IDs. The common side contains the known VCU, BECM, rear-drive and DC/DC groups. Channel assignment was inferred from that comparison and accepted by the maintainer, rather than independently rechecked physically.
+- EXP-0041: VCU isolated-side recording; 46 IDs.
+- EXP-0042: BECM isolated-side recording; 34 IDs.
+- EXP-0043: rear-drive source group; 16 IDs, confirmed by the maintainer from an isolated-side recording.
+- EXP-0044: front-drive source group; 14 IDs, identified by comparing established source groups and subsequently confirmed by the maintainer. No additional independent physical recheck is claimed.
 - EXP-0038/run7: 11 regular CDD-side IDs: 0x12A, 0x149, 0x14B, 0x19A, 0x216, 0x218, 0x311, 0x411, 0x455, 0x5C4, 0x5C5. Rare/transient IDs from this recording are not automatically attributed to CDD.
 - Stalk switch: 0x135, 0x136, 0x516, identified and confirmed by the maintainer. A separate isolation procedure was not supplied.
 

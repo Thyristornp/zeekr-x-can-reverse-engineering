@@ -16,8 +16,9 @@ def main():
  byid={r['CAN_ID']:r for r in frames}
  for r in obs:
   assert byid[r['CAN_ID']]['Source_ECU']==r['Source_ECU']
-  if r['Source_ECU']=='RearDrive':assert r['ECU_Channel']=='2' and r['Experiment']=='EXP-0043'
-  if r['Source_ECU']=='FrontDrive':assert r['ECU_Channel']=='1' and r['Experiment']=='EXP-0044'
+  if r['Source_ECU']=='RearDrive':assert r['Experiment']=='EXP-0043'
+  if r['Source_ECU']=='FrontDrive':assert r['Experiment']=='EXP-0044'
+ assert all(not any('channel' in k.lower() for k in r) for r in obs),'Internal capture mapping in public data'
  for r in signals:assert r['Frame_Source_ECU']==byid[r['CAN_ID']]['Source_ECU']
  workbook=ROOT/'reports/Zeekr_X_CAN_Matrix_EN.xlsx'
  with zipfile.ZipFile(workbook) as z:assert z.testzip() is None
@@ -29,12 +30,15 @@ def main():
   for row in ws:
    for c in row:
     assert c.data_type!='f','Unexpected spreadsheet formula'
-    if isinstance(c.value,str):assert not re.search('[\u0400-\u04ff]',c.value),'Non-English workbook cell'
+    if isinstance(c.value,str):
+     assert not re.search('[\u0400-\u04ff]',c.value),'Non-English workbook cell'
+     assert not re.search(r'(?i)\bCAN[12]\b',c.value),'Internal capture mapping in workbook'
  wb.close()
  for folder in ['database','docs','reports']:
   for p in (ROOT/folder).rglob('*'):
    if p.suffix in {'.csv','.md','.json'}:
-    text=p.read_text();assert not re.search('[\u0400-\u04ff]',text),p
+    text=p.read_text();assert not re.search(r'(?i)\bCAN[12]\b',text),'Internal capture mapping in public text'
+    assert not re.search('[\u0400-\u04ff]',text),p
     assert not re.search(r'\b(?:\d{1,3}\.){3}\d{1,3}\b',text),'Unexpected IP address'
     assert not re.search(r'\bL6T[A-HJ-NPR-Z0-9]{14}\b',text),'Unexpected vehicle identifier'
  print('PASS: source groups, statuses, axle assignments, English workbook and publication boundaries')

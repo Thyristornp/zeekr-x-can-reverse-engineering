@@ -30,14 +30,9 @@ The signal matrix contains **35 entries: 29 candidates, 2 unknown fields and 4 c
 
 Candidates include `0x095` torque-related data, `0x13A` current/torque-related fields, `0x180` motor rotation, `0x142` battery voltage and `0x143` battery current. These names express hypotheses, not validated specifications. Historical diagnostic names such as MGM/IEM do not by themselves identify an axle.
 
-## Front and rear must not be swapped
+## Front and rear drive attribution
 
-| Evidence record | Isolated component side | Remaining network |
-|---|---|---|
-| EXP-0043 | **Rear drive: CAN2** | CAN1 |
-| EXP-0044 | **Front drive: CAN1** | CAN2 |
-
-Capture channel numbers are local to each recording. They are not permanent physical bus names.
+The source matrix distinguishes **16 rear-drive IDs** from **14 front-drive IDs**. Use the ECU association in the matrix when evaluating signals; historical diagnostic labels alone do not identify an axle.
 
 ## Rebuild the workbook
 
