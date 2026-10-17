@@ -18,7 +18,9 @@ An independent research project documenting CAN traffic and ECU diagnostics on a
 
 **124 of 141 observed IDs have assigned transmitters (87.9%). This is not 87.9% signal decoding.** The inventory may grow in other operating modes.
 
-The signal matrix contains **35 entries: 29 candidates, 2 unknown fields and 4 confirmed VIN-layout fields**. Frame decoding remains **121 UNKNOWN, 19 CANDIDATE and 1 PARTIAL**. No fully decoded frame or complete drive-control protocol is claimed. Vehicle identifiers are not included.
+The signal matrix contains **41 entries: 35 candidates, 2 unknown fields and 4 confirmed VIN-layout fields**. Frame decoding remains **118 UNKNOWN, 22 CANDIDATE and 1 PARTIAL**. No fully decoded frame or complete drive-control protocol is claimed. Vehicle identifiers are not included.
+
+**[Full raw-trace review, 17 October 2026](reports/full_raw_review_20261017.md)**: 17.3 million received frames reviewed, new rear-drive candidates, complementary-field exceptions, and a high-load counterexample to the old battery-current formula. No new physical signal is promoted to confirmed.
 
 ## Research focus
 

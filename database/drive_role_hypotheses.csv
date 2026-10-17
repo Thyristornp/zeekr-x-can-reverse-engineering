@@ -1,0 +1,19 @@
+Axle,Role,Field,Status,Physical_Nm_Confirmed,Evidence
+RearDrive,request,VCU 0x04B MSB0 12/16; 0.25*raw-8190,CANDIDATE,False,reports/full_raw_review_20261017.md
+RearDrive,current_or_actual,0x04C MSB0 8/14; raw-8188,CANDIDATE,False,reports/full_raw_review_20261017.md
+RearDrive,positive_limit,0x04C MSB0 40/12; 4*(raw-2047),CANDIDATE,False,reports/full_raw_review_20261017.md
+RearDrive,negative_limit,0x04C MSB0 52/12; complementary to positive field,CANDIDATE,False,reports/full_raw_review_20261017.md
+RearDrive,mode,UNKNOWN,UNKNOWN,False,reports/full_raw_review_20261017.md
+RearDrive,enable,UNKNOWN,UNKNOWN,False,reports/full_raw_review_20261017.md
+RearDrive,speed,UNKNOWN,UNKNOWN,False,reports/full_raw_review_20261017.md
+RearDrive,DC_current,0x063 MSB0 2/14; 0.1*raw-818.8 candidate,CANDIDATE,False,reports/full_raw_review_20261017.md
+RearDrive,fault,UNKNOWN,UNKNOWN,False,reports/full_raw_review_20261017.md
+FrontDrive,request,VCU 0x050 MSB0 2/14; raw-8188,CANDIDATE,False,reports/full_raw_review_20261017.md
+FrontDrive,current_or_actual,0x095 MSB0 18/14; raw-8188,CANDIDATE,False,reports/full_raw_review_20261017.md
+FrontDrive,positive_limit,0x13A MSB0 0/14; raw-8188,CANDIDATE,False,reports/full_raw_review_20261017.md
+FrontDrive,negative_limit,0x13A MSB0 16/14; complementary to positive field,CANDIDATE,False,reports/full_raw_review_20261017.md
+FrontDrive,mode,UNKNOWN,UNKNOWN,False,reports/full_raw_review_20261017.md
+FrontDrive,enable,UNKNOWN,UNKNOWN,False,reports/full_raw_review_20261017.md
+FrontDrive,speed,"0x180 MSB0 16/16; raw*0.5, physical rotation units unverified",CANDIDATE,False,reports/full_raw_review_20261017.md
+FrontDrive,DC_current,0x13A MSB0 50/14; 0.1*raw-818.8 candidate,CANDIDATE,False,reports/full_raw_review_20261017.md
+FrontDrive,fault,UNKNOWN,UNKNOWN,False,reports/full_raw_review_20261017.md

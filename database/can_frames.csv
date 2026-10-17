@@ -8,13 +8,13 @@ Propulsion_CAN,0x41,CANDIDATE,8,UNKNOWN,OUT_OF_SCOPE,vvvvvvvv 0001vvvv vvvv1000 
 Propulsion_CAN,0x43,UNKNOWN,8,UNKNOWN,OUT_OF_SCOPE,00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000,,Unknown; outside current scope
 Propulsion_CAN,0x47,UNKNOWN,8,CONFIRMED,IN_SCOPE,00000000 vv100000 vvv00000 vvvvvvvv vvvvvvvv 00000v01 00000000 00000000,VCU,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x4A,UNKNOWN,8,CONFIRMED,IN_SCOPE,vvvvvvv1 vvvvvvvv vvvvvvvv 1vv0vvvv 00000000 0001vv00 vv000001 vvv00000,VCU,Maintainer-confirmed attribution; see docs/evidence.md
-Propulsion_CAN,0x4B,UNKNOWN,8,CONFIRMED,IN_SCOPE,00001000 vvvv1000 vvvvvvvv 1vv00001 vvvvvvvv 0110vvvv 00000000 00000000,VCU,Maintainer-confirmed attribution; see docs/evidence.md
-Propulsion_CAN,0x4C,UNKNOWN,8,CONFIRMED,IN_SCOPE,vvvvvvvv vvvvvvvv 11vvvvvv 0001vvvv vv001100 vvvvv101 v010vvvv vvvvvvvv,RearDrive,Maintainer-confirmed attribution; see docs/evidence.md
+Propulsion_CAN,0x4B,CANDIDATE,8,CONFIRMED,IN_SCOPE,00001000 vvvv1000 vvvvvvvv 1vv00001 vvvvvvvv 0110vvvv 00000000 00000000,VCU,Maintainer-confirmed attribution; see docs/evidence.md
+Propulsion_CAN,0x4C,CANDIDATE,8,CONFIRMED,IN_SCOPE,vvvvvvvv vvvvvvvv 11vvvvvv 0001vvvv vv001100 vvvvv101 v010vvvv vvvvvvvv,RearDrive,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x50,CANDIDATE,8,CONFIRMED,IN_SCOPE,vvvvvv10 vvvvvvvv vvvvvvvv 0vvvvvvv vvvvvvvv 0001vvvv 00000000 00000000,VCU,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x53,UNKNOWN,8,CONFIRMED,IN_SCOPE,00000000 00000000 00000001 10000000 vvvv0001 11111110 10011111 00000000,BECM,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x56,UNKNOWN,8,CONFIRMED,IN_SCOPE,vvvv0vvv 1011vvvv 00000000 00000000 v0000000 vvvvvvvv 0vvvvvvv 00000000,VCU,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x60,UNKNOWN,8,CONFIRMED,IN_SCOPE,vvvvvvv1 vvvvvvvv 10000000 vvvvv010 vv1vv111 vvvvvvvv 00000000 000000v0,RearDrive,Maintainer-confirmed attribution; see docs/evidence.md
-Propulsion_CAN,0x63,UNKNOWN,8,CONFIRMED,IN_SCOPE,vvvvvv10 vvvvvvvv 00011110 00000000 00000000 00000000 00000000 00000000,RearDrive,Maintainer-confirmed attribution; see docs/evidence.md
+Propulsion_CAN,0x63,CANDIDATE,8,CONFIRMED,IN_SCOPE,vvvvvv10 vvvvvvvv 00011110 00000000 00000000 00000000 00000000 00000000,RearDrive,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x66,UNKNOWN,8,CONFIRMED,IN_SCOPE,00000000 00000000 00000000 00000000 00000000 00000000 10000000 vv01vvvv,VCU,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x71,UNKNOWN,8,CONFIRMED,IN_SCOPE,vvvvv001 00vvvvvv vvvvvvvv 1111vvvv vvvvvv00 000vvvvv 00000000 00000000,VCU,Maintainer-confirmed attribution; see docs/evidence.md
 Propulsion_CAN,0x76,CANDIDATE,8,UNKNOWN,OUT_OF_SCOPE,vvvv11vv vvvvvvvv vvvvvvv1 vvvvvvvv vvvvv001 00vvvvvv vvvvvvvv 0111vvvv,,Unknown; outside current scope

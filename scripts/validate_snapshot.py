@@ -11,8 +11,8 @@ def main():
  frames=read('can_frames.csv');signals=read('can_signals.csv');obs=read('bridge_observations.csv')
  assert len(frames)==len({(r['Bus'],r['CAN_ID']) for r in frames})
  assert Counter(r['Source_ECU'] for r in frames)=={'VCU':46,'BECM':34,'RearDrive':16,'FrontDrive':14,'CDD':11,'Stalk switch':3,'':17}
- assert Counter(r['Status'] for r in signals)=={'CANDIDATE':29,'CONFIRMED':4,'UNKNOWN':2}
- assert Counter(r['Frame_status'] for r in frames)=={'UNKNOWN':121,'CANDIDATE':19,'PARTIAL':1}
+ assert Counter(r['Status'] for r in signals)=={'CANDIDATE':35,'CONFIRMED':4,'UNKNOWN':2}
+ assert Counter(r['Frame_status'] for r in frames)=={'UNKNOWN':118,'CANDIDATE':22,'PARTIAL':1}
  byid={r['CAN_ID']:r for r in frames}
  for r in obs:
   assert byid[r['CAN_ID']]['Source_ECU']==r['Source_ECU']

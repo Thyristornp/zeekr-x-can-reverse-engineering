@@ -1,5 +1,8 @@
 # Source-aware review of existing CAN evidence — 2026-10-16
 
+> Superseded by the [complete available-raw review](full_raw_review_20261017.md), including corrected current interpretation and complementary-field exceptions.
+
+
 This review joins existing signal observations with the established frame publishers. It is a re-evaluation of saved derived data, **not a fresh scan of all raw recordings**. No new CAN signal definitions, confirmed control commands, or status promotions are introduced. The existing CSV matrices and workbook remain unchanged.
 
 ## What source attribution changes
